@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,6 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
     EditText phone,password;
+    TextView textView;
     Button btn;
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference().child("users");
 
@@ -28,6 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         phone=(EditText) findViewById(R.id.inputPhone2);
         password=(EditText) findViewById(R.id.inputPassword2);
         btn=(Button) findViewById(R.id.btn2);
+        textView = findViewById(R.id.textView);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +72,15 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the Signup activity
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
