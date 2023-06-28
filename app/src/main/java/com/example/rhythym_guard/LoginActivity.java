@@ -48,8 +48,8 @@ public class LoginActivity extends AppCompatActivity {
                                 if(getpass.equals(spassword))
                                 {
                                     Intent intent;
-                                   intent = new Intent(LoginActivity.this,RegisterActivity.class);
-                                   // intent.putExtra("phone",sphone);
+                                    intent = new Intent(LoginActivity.this,HomeActivity.class);
+                                    intent.putExtra("phone",sphone);
                                     startActivity(intent);
 
                                 }
