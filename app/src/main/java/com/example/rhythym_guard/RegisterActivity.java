@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RegisterActivity extends AppCompatActivity {
     private EditText username,email,phone,password,cpassword;
     private Button btn;
-    private TextView textview;
+    private TextView textview2;
     DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference().child("users");
 
 
@@ -29,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         password=findViewById(R.id.inputPassword2);
         cpassword=findViewById(R.id.inputConfirmPassword);
         btn=findViewById(R.id.btnRegister);
-        textview=findViewById(R.id.textView2);
+        textview2=findViewById(R.id.textView2);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +46,13 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        textview2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the Signup activity
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
