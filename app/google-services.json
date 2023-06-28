@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "873570056508",
+    "firebase_url": "https://heartbit-ab64f-default-rtdb.firebaseio.com",
+    "project_id": "heartbit-ab64f",
+    "storage_bucket": "heartbit-ab64f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873570056508:android:53f5c2f42bba3515868639",
+        "android_client_info": {
+          "package_name": "com.example.heartbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873570056508-nljecj29d3rb9o62ati45frvmu8ork59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.heartbit",
+            "certificate_hash": "8e3e341b236ce0f708229601904a397387e7ac8e"
+          }
+        },
+        {
+          "client_id": "873570056508-174qtbdpep7m93us5vhdh6mkmdc6me1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAIhNElXBdOf93Xz6b_bXeireOqkbTgXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873570056508-174qtbdpep7m93us5vhdh6mkmdc6me1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873570056508:android:6d7c125bb329d564868639",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873570056508-174qtbdpep7m93us5vhdh6mkmdc6me1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAIhNElXBdOf93Xz6b_bXeireOqkbTgXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873570056508-174qtbdpep7m93us5vhdh6mkmdc6me1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873570056508:android:a709b95e75226ed9868639",
+        "android_client_info": {
+          "package_name": "com.example.rhythym_guard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873570056508-174qtbdpep7m93us5vhdh6mkmdc6me1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAIhNElXBdOf93Xz6b_bXeireOqkbTgXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873570056508-174qtbdpep7m93us5vhdh6mkmdc6me1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
