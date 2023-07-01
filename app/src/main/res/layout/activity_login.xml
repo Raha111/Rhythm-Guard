@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background"
+    >
 
 
     <LinearLayout
@@ -21,7 +23,7 @@
             android:layout_marginBottom="10dp"
             android:text="Login"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -32,8 +34,9 @@
 
         <EditText
             android:id="@+id/inputPhone2"
-            android:layout_width="match_parent"
+            android:layout_width="306dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/input_bg"
@@ -45,28 +48,32 @@
             android:minHeight="48dp"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
-            android:paddingRight="10dp"
+            android:paddingRight="40dp"
             android:paddingBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/inputEmail"
             app:layout_constraintStart_toStartOf="@+id/inputEmail"
             app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
         <EditText
             android:id="@+id/inputPassword2"
-            android:layout_width="match_parent"
+            android:layout_width="305dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/input_bg"
             android:drawableLeft="@drawable/ic_security"
             android:ems="10"
-            android:hint="Password"
+            android:hint="  Password"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
+            android:textColorHint="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/inputConfirmPassword"
             app:layout_constraintEnd_toEndOf="@+id/inputPhone2"
             app:layout_constraintStart_toStartOf="@+id/inputPhone2"
@@ -107,7 +114,7 @@
                 android:layout_weight="1"
                 android:gravity="left"
                 android:text="Signup"
-                android:textColor="#77052b" />
+                android:textColor="#F2115C" />
 
         </LinearLayout>
 
