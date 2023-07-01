@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background"
+    >
 
 
     <TextView
@@ -15,7 +16,7 @@
 
         android:minHeight="48dp"
         android:onClick="registerPage"
-        android:paddingStart="12dp"
+        android:paddingStart="28dp"
         android:paddingTop="8dp"
         android:paddingEnd="12dp"
         android:paddingBottom="10dp"
@@ -25,10 +26,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <EditText
         android:id="@+id/inputPassword2"
@@ -39,7 +40,7 @@
 
         android:drawableLeft="@drawable/ic_security"
         android:ems="10"
-        android:hint="Password"
+        android:hint="  Password"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
@@ -58,7 +59,7 @@
         android:id="@+id/inputConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_security"
         android:drawablePadding="10dp"
@@ -81,14 +82,14 @@
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
-        android:backgroundTint="#69719E"
+        android:backgroundTint="#FB1D64"
         android:text="Register"
-        android:textColor="@color/black"
+        android:textColor="@color/ic_launcher_background"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/inputConfirmPassword"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/inputConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassword" />
 
@@ -98,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Already Have an Account?"
-        android:textColor="@color/design_default_color_error"
+        android:textColor="#F52C51"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/btnRegister"
         app:layout_constraintStart_toStartOf="@+id/btnRegister"
@@ -114,7 +115,7 @@
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_person"
         android:ems="10"
-        android:hint="NAME"
+        android:hint="  Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
@@ -133,7 +134,7 @@
         android:id="@+id/inputEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="10dp"
@@ -156,7 +157,7 @@
         android:id="@+id/inputPhone2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_phone"
         android:drawablePadding="10dp"
