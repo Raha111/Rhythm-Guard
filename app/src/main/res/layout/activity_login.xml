@@ -8,7 +8,6 @@
     android:background="@drawable/background"
     >
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,13 +66,16 @@
             android:drawableLeft="@drawable/ic_security"
             android:ems="10"
             android:hint="  Password"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/inputConfirmPassword"
             app:layout_constraintEnd_toEndOf="@+id/inputPhone2"
             app:layout_constraintStart_toStartOf="@+id/inputPhone2"
@@ -91,7 +93,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
             android:textAlignment="center"
@@ -102,10 +104,14 @@
                 android:layout_width="135dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
                 android:gravity="center|right"
-                android:text="Don't have any account?"
-                android:textStyle="bold" />
+                android:text="Don't have an account?"
 
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView"
@@ -113,8 +119,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="left"
-                android:text="Signup"
-                android:textColor="#F2115C" />
+                android:text="Sign up"
+                android:textColor="#F2115C"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
