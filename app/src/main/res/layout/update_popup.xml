@@ -2,114 +2,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_blue">
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="Update Details"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="normal" />
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
-
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Heart Rate"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="normal" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/ht1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@color/purple_200"
-        android:gravity="center" />
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
-
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Systolic Pressure"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="normal" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/ss1"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@color/purple_200"
-        android:gravity="center" />
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
-
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Diastolic Pressure"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="normal" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/dd1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@color/purple_200"
-        android:gravity="center" />
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
-
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Comment"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="normal" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/cm1"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@color/purple_200"
-        android:gravity="center" />
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnupdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/btn_bg"
-        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="#FF4081"
         android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        android:textSize="21dp" />
 
 </LinearLayout>
