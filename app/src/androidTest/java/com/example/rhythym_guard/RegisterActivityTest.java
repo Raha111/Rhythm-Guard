@@ -31,7 +31,6 @@ public class RegisterActivityTest {
     @Test
     @SuppressLint("InlinedApi")
     public void testRegisterActivity() {
-
         onView(withId(R.id.registerpage)).check(matches(isDisplayed()));
         onView(withId(R.id.logo)).check(matches(isDisplayed()));
         onView(withId(R.id.inputUsername)).check(matches(isDisplayed()));
@@ -42,8 +41,8 @@ public class RegisterActivityTest {
         onView(withId(R.id.btnRegister)).check(matches(isDisplayed()));
         onView(withId(R.id.textView2)).check(matches(isDisplayed()));
 
-        String name = "Rafi";
-        String email = "rafi@gmail.com";
+        String name = "Raha";
+        String email = "raha@gmail.com";
         String phone = "1234567890";
         String password = "rafi";
 

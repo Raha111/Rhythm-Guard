@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/h_background"
     app:cardBackgroundColor="@color/white"
-    tools:context=".AddActivity">
+    tools:context=".AddActivity"
+    android:id="@+id/add_page"
+    >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
