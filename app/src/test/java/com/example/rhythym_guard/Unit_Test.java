@@ -3,6 +3,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 public class Unit_Test {
+
+    /**
+     * this method is for checking if the comment is got
+     */
     @Test
     public void getCommentTest(){
         MainModel mainModel=new MainModel("good","21-03-2023","120","75","80","5.00");
@@ -74,6 +78,9 @@ public class Unit_Test {
         assertEquals("130", mainModel.getSystolic_pressure());
     }
 
+    /**
+     * this test is for checking if the time is correctly set
+     */
     @Test
     public void setTimeTest() {
         MainModel mainModel = new MainModel();
