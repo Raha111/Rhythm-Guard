@@ -49,7 +49,6 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:8.0.0'
     implementation 'com.google.firebase:firebase-core:20.0.0'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
 
 
 }
