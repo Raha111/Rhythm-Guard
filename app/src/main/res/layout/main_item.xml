@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@drawable/h_background"
+    android:background="@drawable/background"
     android:padding="16dp">
 
     <RelativeLayout
@@ -165,7 +165,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:background="#FF4081"
+                    android:background="#FF6171"
                     android:text="UPDATE"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
@@ -176,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#FF4081"
+                    android:background="#FF6171"
                     android:text="DELETE"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
