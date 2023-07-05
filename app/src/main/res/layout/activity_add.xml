@@ -13,14 +13,15 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:foreground="@drawable/purple_bg"
+        app:cardBackgroundColor="#EFEFEF"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
-        app:cardBackgroundColor="#EFEFEF"
-        android:foreground="@drawable/purple_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +30,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/silver_bg">
+            android:background="@drawable/silver_bg"
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/heartRateInputLayout"
@@ -42,7 +43,9 @@
                     android:id="@+id/editTextTextPersonName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,7 +59,9 @@
                     android:id="@+id/editTextTextPersonName2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +75,9 @@
                     android:id="@+id/editTextTextPersonName3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,8 +93,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
-                    android:minLines="3"
-                    android:maxLines="5" />
+
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

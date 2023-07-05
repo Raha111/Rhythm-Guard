@@ -9,6 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Update Details"
         android:textColor="@color/white"
@@ -20,6 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:text="Heart Rate"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -27,17 +30,21 @@
 
     <EditText
         android:id="@+id/ht1"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="48dp"
-        android:background="@drawable/rounded_edittext"
+        android:layout_gravity="center"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
         android:padding="8dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:text="Systolic Pressure"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -45,17 +52,21 @@
 
     <EditText
         android:id="@+id/ss1"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="48dp"
-        android:background="@drawable/rounded_edittext"
+        android:layout_gravity="center"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
         android:padding="8dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:text="Diastolic Pressure"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -63,17 +74,21 @@
 
     <EditText
         android:id="@+id/dd1"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="48dp"
-        android:background="@drawable/rounded_edittext"
+        android:layout_gravity="center"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
         android:padding="8dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:text="Comment"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -81,19 +96,24 @@
 
     <EditText
         android:id="@+id/cm1"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="48dp"
-        android:background="@drawable/rounded_edittext"
+        android:layout_gravity="center"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
         android:padding="8dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnupdate"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="#FF4081"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#DD335A"
+        android:gravity="center"
         android:text="Update"
         android:textColor="@color/white"
         android:textSize="18sp"

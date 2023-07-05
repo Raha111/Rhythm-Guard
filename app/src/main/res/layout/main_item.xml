@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/transparent"
     android:fillViewport="true"
-    android:background="@drawable/background"
     android:padding="16dp">
 
     <RelativeLayout
@@ -16,148 +16,154 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="#008080"
+            android:background="@color/transparent"
             app:cardCornerRadius="10dp"
-            app:cardUseCompatPadding="true"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#FF97BB"
                 android:orientation="vertical"
-                android:padding="15dp"
-                android:background="@drawable/teal_border">
+                android:padding="15dp">
 
                 <TextView
                     android:id="@+id/rate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Heart Rate:"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
                     android:shadowColor="#808080"
                     android:shadowDx="2"
                     android:shadowDy="2"
-                    android:shadowRadius="2" />
+                    android:shadowRadius="2"
+                    android:text="Heart Rate:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/rate1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/teal_border"
+                    android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:background="@drawable/teal_border" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/d_pres"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Diastolic Pressure:"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:shadowColor="#808080"
                     android:shadowDx="2"
                     android:shadowDy="2"
-                    android:shadowRadius="2" />
+                    android:shadowRadius="2"
+                    android:text="Diastolic Pressure:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/d_pres1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/teal_border"
+                    android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:background="@drawable/teal_border" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/s_pres"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Systolic Pressure:"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:shadowColor="#808080"
                     android:shadowDx="2"
                     android:shadowDy="2"
-                    android:shadowRadius="2" />
+                    android:shadowRadius="2"
+                    android:text="Systolic Pressure:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/s_pres1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/teal_border"
+                    android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:background="@drawable/teal_border" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/dt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Date:"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:shadowColor="#808080"
                     android:shadowDx="2"
                     android:shadowDy="2"
-                    android:shadowRadius="2" />
+                    android:shadowRadius="2"
+                    android:text="Date:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/dt1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/teal_border"
+                    android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:background="@drawable/teal_border" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Time:"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:shadowColor="#808080"
                     android:shadowDx="2"
                     android:shadowDy="2"
-                    android:shadowRadius="2" />
+                    android:shadowRadius="2"
+                    android:text="Time:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/tm1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/teal_border"
+                    android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:background="@drawable/teal_border" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/commentLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Comment:"
-                    android:textColor="@android:color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
                     android:shadowColor="#808080"
                     android:shadowDx="2"
                     android:shadowDy="2"
-                    android:shadowRadius="2" />
+                    android:shadowRadius="2"
+                    android:text="Comment:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/comment"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/teal_border"
+                    android:gravity="center"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
-                    android:background="@drawable/teal_border" />
+                    android:textSize="18sp" />
 
 
                 <Button
@@ -165,7 +171,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:background="#FF6171"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="#20040B"
                     android:text="UPDATE"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
@@ -176,7 +183,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#FF6171"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="#DD335A"
                     android:text="DELETE"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
