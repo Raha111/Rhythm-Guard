@@ -35,7 +35,11 @@ public class AddActivity extends AppCompatActivity {
 
         editTextTextMultiLine = findViewById(R.id.editTextTextMultiLine);
         button2 = findViewById(R.id.button);
-        String name = getIntent().getStringExtra("phone");
+        String name1 = getIntent().getStringExtra("phone");
+        if(name1==null){
+            name1 = "01738047196";
+        }
+        String name = name1;
         System.out.println(name);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
