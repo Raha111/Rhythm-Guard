@@ -46,6 +46,28 @@ public class main_itemTest {
                 .check(ViewAssertions.matches(ViewMatchers.withText("Time:")));
         Espresso.onView(ViewMatchers.withId(R.id.commentLabel))
                 .check(ViewAssertions.matches(ViewMatchers.withText("Comment:")));
+
     }
+
+    @Test
+    public void testUpdate(){
+        Espresso.onView(ViewMatchers.withId(R.id.rv)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+                .perform(RecyclerViewActions.scrollToPosition(0));
+        SystemClock.sleep(2000);
+        Espresso.onView(ViewMatchers.withId(R.id.btn1))
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+        Espresso.onView(ViewMatchers.withId(R.id.btn1))
+                .perform(ViewActions.click());
+    }
+    public void testDelete(){
+        Espresso.onView(ViewMatchers.withId(R.id.rv)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+                .perform(RecyclerViewActions.scrollToPosition(0));
+        SystemClock.sleep(2000);
+        Espresso.onView(ViewMatchers.withId(R.id.btn2))
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+        Espresso.onView(ViewMatchers.withId(R.id.btn2))
+                .perform(ViewActions.click());
+    }
+
 
 }
