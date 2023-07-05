@@ -126,5 +126,9 @@ public class MainModel {
     public void setTime(String time) {
         this.time = time;
     }
+
+    public int compareTo(MainModel mainModel) {
+        return this.time.compareTo(mainModel.getTime());
+    }
 }
 
