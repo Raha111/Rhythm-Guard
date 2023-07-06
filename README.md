@@ -13,3 +13,7 @@ Rhythm Guard is an Android app designed to help you monitor and track your heart
 Rhythm Guard, is a user-friendly Android application designed to help individuals monitor their heart rate, BMI, and blood pressure. As people become more health-conscious, tracking these vital signs becomes an essential part of daily life. With its intuitive user interface and comprehensive features, Rhythm Guard aims to be your ultimate heart assistant.
 
 
+Learn more about Rhythm Guard in our [Wiki](https://github.com/Raha111/Rhythm-Guard/wiki)
+
+
+
