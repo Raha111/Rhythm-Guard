@@ -47,10 +47,7 @@ public class AddActivityTest {
         Espresso.pressBack();
         Espresso.closeSoftKeyboard();
 
-        // Perform click action on the button
         onView(withId(R.id.button)).perform(click());
-
-        // Add assertions to verify the result or navigate to the next activity if applicable
     }
 
 }
