@@ -2,6 +2,7 @@ package com.example.rhythym_guard;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -45,6 +47,40 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
         holder.dt1.setText(model.getDate());
         holder.s_pres1.setText(model.getSystolic_pressure());
         holder.comment.setText(model.getComment());
+
+        String systolicPressureStr = model.getSystolic_pressure();
+        String diastolicPressureStr = model.getDiastolic_pressure();
+
+        if (!systolicPressureStr.isEmpty() && !diastolicPressureStr.isEmpty()) {
+            int systolicPressure = Integer.parseInt(systolicPressureStr);
+            int diastolicPressure = Integer.parseInt(diastolicPressureStr);
+
+            if (systolicPressure <= 90 && diastolicPressure <= 60) {
+                // Change the color of systolic_pressure and diastolic_pressure
+                Typeface boldTypeface = Typeface.defaultFromStyle(Typeface.BOLD);
+
+                holder.s_pres1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.red));
+                holder.s_pres1.setTypeface(boldTypeface);
+
+                holder.d_pres1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.red));
+                holder.d_pres1.setTypeface(boldTypeface);
+
+                holder.rate1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.red));
+                holder.rate1.setTypeface(boldTypeface);
+
+
+
+            } else {
+                // Set the default color
+                holder.s_pres1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+                holder.d_pres1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+                holder.rate1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+            }
+        } else {
+            // Handle the case when the values are not provided
+            holder.s_pres1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+            holder.d_pres1.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+        }
 
         holder.btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,8 +187,6 @@ public class MainAdapter extends FirebaseRecyclerAdapter<MainModel,MainAdapter.m
             comment=(TextView) itemView.findViewById(R.id.comment);
             btn1=(Button) itemView.findViewById(R.id.btn1);
             btn2=(Button) itemView.findViewById(R.id.btn2);
-
-
         }
-    }
+}
 }
