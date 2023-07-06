@@ -28,8 +28,16 @@ public class HomeActivity extends AppCompatActivity {
         btn3= (Button) findViewById(R.id.button3);
         t1=(TextView)findViewById(R.id.txt2);
         t2=(TextView)findViewById(R.id.txt);
-        String name = getIntent().getStringExtra("phone");
-        String name1 = getIntent().getStringExtra("phone");
+        String name2 = getIntent().getStringExtra("phone");
+        String name3 = getIntent().getStringExtra("phone");
+        if(name2==null){
+            name2="01738047196";
+        }
+        if(name3==null){
+            name2="01738047196";
+        }
+        String name = name2;
+        String name1 = name3;
         DatabaseReference databaseReference1 = FirebaseDatabase.getInstance().getReference().child("info").child(name);
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
